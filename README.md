@@ -18,9 +18,7 @@ You can choose to use engine especific or all in a roll.
 Basic usage
 
             Query query = new Query();
-			
-			query.Words = "The Neighborhood S01E01";
-			
+	    query.Words = "The Neighborhood S01E01";
             List<Torrent> Result = Basics.Search(query);
 			
  This will search all engines suporteds and return a list of torrents, descendent ordered by seeds
@@ -28,11 +26,8 @@ Basic usage
  Individual usage
  
             Query query = new Query();
-			
             query.Words = "The Neighborhood S01E01";
-			
-             query.Origem = "Lime";
-			 
+            query.Origem = "Lime";
             List<Torrent> Result = Lime.Search(query);
 			
 This will search especific engine suporteds and return a list of torrents, descendent ordered by seeds
