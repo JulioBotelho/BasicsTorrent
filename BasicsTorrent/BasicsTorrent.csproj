@@ -7,8 +7,8 @@
     <ProjectGuid>{38910152-35D5-469F-96A0-91E4E7843692}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KATExtract</RootNamespace>
-    <AssemblyName>KATExtract</AssemblyName>
+    <RootNamespace>BasicTorrent</RootNamespace>
+    <AssemblyName>BasicTorrent</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\KATExtract.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\BasicTorrent.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
