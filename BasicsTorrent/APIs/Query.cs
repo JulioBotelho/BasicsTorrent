@@ -41,23 +41,23 @@ namespace BasicsTorrent
                 origem = value;
                 if (origem.Equals("KATcr"))
                 {
-                    UrlBase = "https://katcr.co";
-                    UrlMask = "{0}/katsearch/page/1/{1}";
+                    UrlBase = Constants.KatBase; // "https://katcr.co";
+                    UrlMask = Constants.KatMask; // "{0}/katsearch/page/1/{1}";
                 }
                 else if (origem.Equals("Kickass"))
                 {
-                    UrlBase = "https://kickass.sx";
-                    UrlMask = "{0}/torrent/usearch/{1}";
+                    UrlBase = Constants.KikBase; // "https://kickass.sx";
+                    UrlMask = Constants.KikMask; // "{0}/torrent/usearch/{1}";
                 }
                 else if (origem.Equals("x1337"))
                 {
-                    UrlBase = "https://www.1377x.to";
-                    UrlMask = "{0}/search/{1}/1/";
+                    UrlBase = Constants.x13Base; // "https://www.1377x.to";
+                    UrlMask = Constants.x13Mask; // "{0}/search/{1}/1/";
                 }
                 else if (origem.Equals("Lime"))
                 {
-                    UrlBase = "https://www.limetorrents.info";
-                    UrlMask = "{0}/search/all/{1}/";
+                    UrlBase = Constants.LimBase; // "https://www.limetorrents.info";
+                    UrlMask = Constants.LimMask; // "{0}/search/all/{1}/";
                 }
             }
         }
