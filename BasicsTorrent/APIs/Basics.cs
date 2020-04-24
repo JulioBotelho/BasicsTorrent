@@ -26,7 +26,7 @@ namespace BasicsTorrent
             // Ainda não consegui buscar exata no KATcr
             // https://katcr.co/katsearch/page/1/The.Neighborhood.S01E01%20
             query.Origem = "KATcr";
-            query.Words = "The.Neighborhood.S01E01";
+            //query.Words = "The.Neighborhood.S01E01";
             List<Torrent> Result = KATcr.Search(query);
 
             // kickass torrent/usearch ou katsearch

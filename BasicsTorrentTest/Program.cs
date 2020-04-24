@@ -12,7 +12,7 @@ namespace BasicsTorrentTest
         static void Main(string[] args)
         {
             Query query = new Query();
-            query.Words = "The.Neighborhood.S01E01";
+            query.Words = "Home Before Dark S01E01";
             List<Torrent> Result = Basics.Search(query);
             //query.Origem = "Lime";
             //List<Torrent> Result = Lime.Search(query);

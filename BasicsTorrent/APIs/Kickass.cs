@@ -134,11 +134,11 @@ namespace BasicsTorrent
                                 {
                                     if (t1.Name == "class" && t1.Value == "green center")
                                     {
-                                        torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                        torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                     }
                                     else if (t1.Name == "class" && t1.Value == "red lasttd center")
                                     {
-                                        torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                        torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                     }
                                 }
                             }

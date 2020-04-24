@@ -69,11 +69,11 @@ namespace BasicsTorrent
                                     }
                                     else if (t1.Name == "class" && t1.Value == "tdseed")
                                     {
-                                        torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                        torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                     }
                                     else if (t1.Name == "class" && t1.Value == "tdleech")
                                     {
-                                        torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                        torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                     }
                                 }
                             }

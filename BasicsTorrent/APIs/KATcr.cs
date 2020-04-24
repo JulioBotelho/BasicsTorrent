@@ -124,11 +124,11 @@ namespace BasicsTorrent
                             {
                                 if (t1.Name == "class" && t1.Value == "text--nowrap text--center text--success")
                                 {
-                                    torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                    torrent.Seeders = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                 }
                                 else if (t1.Name == "class" && t1.Value == "text--nowrap text--center text--error")
                                 {
-                                    torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Trim());
+                                    torrent.Leechers = int.Parse(td1.InnerText.Replace("\n", "").Replace(",", "").Replace(".", "").Trim());
                                 }
                             }
                         }
