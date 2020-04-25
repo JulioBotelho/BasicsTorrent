@@ -1,5 +1,5 @@
 # BasicsTorrent
- API to search manyTorrents engine to get TV Series Magnet link
+ API to search many Torrents engine to get TV Series Magnet link
  
  This is a very simple API warapper to torrents engine.
  
@@ -34,7 +34,7 @@ This will search especific engine suporteds and return a list of torrents, desce
 
 Torrent Data Structura
 
-	Nome - torrent file name
+		Nome - torrent file name
         TorrentUrl - URL to open torrent
         MagnetUrl - URL to download Magnet
         Origem - ID to supported engine - Valids Lime, KATcr, x1337 and Kickass
@@ -45,7 +45,7 @@ Torrent Data Structura
 
  All selected torrents has Nome starting with query Words
  
- There are some constantsexposed to make possible dinamic fixing in case of engine changes.
+ There are some constants exposed to make possible dinamic fixing in case of engine changes.
  
         Constants.KatBase = "https://katcr.co";
         Constants.KatMask = "{0}/katsearch/page/1/{1}";
